@@ -15,9 +15,8 @@ def total_fuel_for_mass(mass):
     return total_fuel
 
 
-
 if __name__ == "__main__":
-    with open('input') as fp:
+    with open("input") as fp:
         masses = [int(mass) for mass in list(fp)]
         assert masses[2] == 119076
 
@@ -26,4 +25,3 @@ if __name__ == "__main__":
 
         total_fuel = sum([total_fuel_for_mass(mass) for mass in masses])
         print("Part 2: ", total_fuel)
-
